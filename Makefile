@@ -162,6 +162,9 @@ MLTON = mlton
 
 MLTON_OPTS = -runtime 'ram-slop 0.4'
 
+# Required by HOL4's OT exporting facility for huge combined theories
+MLTON_OPTS += -default-type intinf
+
 MLTON_SRC = \
   src/Portable.sig src/PortableMlton.sml \
   $(SRC)
