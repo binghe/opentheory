@@ -33,7 +33,7 @@ clean:
 	@echo '+------------------+'
 	@echo
 	rm -f $(TEMP)
-	$(MAKE) -C test $@
+#	$(MAKE) -C test $@
 
 ###############################################################################
 # Testing.
@@ -41,7 +41,7 @@ clean:
 
 .PHONY: test
 test:
-	$(MAKE) -C test
+#	$(MAKE) -C test
 
 ###############################################################################
 # Source files.
@@ -199,7 +199,7 @@ mlton-info:
 
 .PHONY: mlton
 mlton: mlton-info $(MLTON_TARGETS)
-	$(MAKE) -C test mlton
+#	$(MAKE) -C test mlton
 
 ###############################################################################
 # Building using Poly/ML.
@@ -244,7 +244,7 @@ polyml-info:
 
 .PHONY: polyml
 polyml: polyml-info $(POLYML_TARGETS)
-	$(MAKE) -C test polyml
+#	$(MAKE) -C test polyml
 
 ###############################################################################
 # Building using Moscow ML.
